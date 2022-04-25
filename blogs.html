@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medcare || Blogs</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+  --green:#16a085;
+  --black:#444;
+  --light-color:#777;
+  --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+  --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+  --border:.2rem solid var(--green);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+
+.heading{
+  text-align: center;
+  padding-bottom: 2rem;
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  color:var(--black);
+  font-size: 5rem;
+  letter-spacing: .4rem;
+}
+
+.heading span{
+  text-transform: uppercase;
+  color:var(--green);
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  border:var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  color:var(--green);
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+}
+
+.btn span{
+  padding:.7rem 1rem;
+  border-radius: .5rem;
+  background: var(--green);
+  color:#fff;
+  margin-left: .5rem;
+}
+
+.btn:hover{
+  background: var(--green);
+  color:white;
+}
+
+.btn:hover span{
+  color: var(--green);
+  background:#fff;
+  margin-left: 1rem;
+}
+
+.header{
+  padding:2rem 9%;
+  position: fixed;
+  top:0; left: 0; right: 0;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.705);
+}
+
+.header .logo i{
+  color: var(--green);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+  color: var(--green);
+}
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+
+.blogs .box-container .box{
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.blogs .box-container .box .image{
+    height: 20rem;
+    overflow:hidden;
+    border-radius: .5rem;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform:scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding-top: 1rem;
+}
+
+.blogs .box-container .box .content .icon{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogs .box-container .box .content .icon a{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.blogs .box-container .box .content .icon a:hover{
+    color:var(--green);
+}
+
+.blogs .box-container .box .content .icon a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.blogs .box-container .box .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.blogs .box-container .box .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+    </style>
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="" class="logo"><i class="fas fa-heartbeat"></i><b>medcare.</b></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="readmore.html">About</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Diabaties treatment: is a permanat cure possible?</h3>
+                <p>In all honesty, diabetes is a disease that is manageable. While diabetes is a life-long disease, the period of remission can last for a long time in some patients. During this period, the body doesn’t show signs. Still, the disease hasn’t left the body.</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>What is Heart Bypass surgery?</h3>
+                <p>A coronary artery bypass graft (CABG) or a heart bypass surgery is a surgical procedure performed to restore blood flow to parts of the heart that have been affected by blockages in the coronary arteries.</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="image/blog-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                </div>
+                <h3>Best Treatment of Parkinson's Disease</h3>
+                <p>Have you ever seen old-age people with stooped posture, shaky hands, and slur speech? These are symptoms of Parkinson's disease. It occurs due to degenerative changes in the nervous system and is seen after 60 years, but in some people, it can occur even in their 50s.</p>
+               
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<br><br><br><br>
+</body>
+</html>
